@@ -1,0 +1,63 @@
+:root {
+    --blue: #2196F3;
+}
+
+.px-1 {
+    padding-inline: 1rem;
+}
+
+.py-1 {
+    padding-block: 1rem;
+}
+
+.mx-2 {
+    margin-inline: 2rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.my-2 {
+    margin-block: 2rem;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.nav {
+    background-color: #388e3c;
+}
+
+.todo {
+    &__item {
+        &_completed {
+            span {
+                text-decoration: line-through;
+            }
+        }
+        &_important {
+            span {
+                font-weight: 700;
+                color: var(--blue);
+            }
+        }
+    }
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        background-color: #f3f3f3;
+    }
+    &__label {
+        width: 95%;
+        cursor: pointer;
+    }
+}
